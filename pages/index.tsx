@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import FavIcon from '../public/favicon.png'
 import axios from 'axios'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -11,7 +12,8 @@ interface Iprops {
 }
 const Home = ({videos}:Iprops) => {
   
-  return (
+  
+  return (<>
     <div className='flex flex-col gap-10 videos h-full'>
         {videos.length ? (
           videos.map((video: Video) => (
@@ -21,6 +23,7 @@ const Home = ({videos}:Iprops) => {
           <NoResults text = {'No Videos'} />
         )}
     </div>
+    </>
   )
 }
 export const getServerSideProps = async ({
