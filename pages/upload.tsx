@@ -9,6 +9,7 @@ import useAuthStore from '../store/authStore';
 import { BASE_URL } from '../utils';
 import { client } from '../utils/client';
 import { topics } from '../utils/constants';
+
 const Upload = () => {
     const [caption, setCaption] = useState('');
   const [topic, setTopic] = useState<String>(topics[0].name);
