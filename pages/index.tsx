@@ -34,6 +34,7 @@ export const getServerSideProps = async ({
   let response = await axios.get(`${BASE_URL}/api/post`);
 
   if(topic) {
+    console.log(topic)
     response = await axios.get(`${BASE_URL}/api/discover/${topic}`);
   }
   
