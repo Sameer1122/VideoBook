@@ -8,7 +8,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+#nprogress .bar {
+  background: rgb(236, 31, 51) !important;
+  }
 a {
   color: inherit;
   text-decoration: none;
